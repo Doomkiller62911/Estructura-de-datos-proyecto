@@ -1,0 +1,38 @@
+package estructuradatos;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+
+class Material {
+    private String nombre;
+
+    public Material(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+}
+
+
+class LineaProduccion {
+    private List<Material> materiales;
+
+    public LineaProduccion() {
+        this.materiales = new ArrayList<>();
+    }
+
+
+    public void agregarMaterial(Material material) {
+        materiales.add(material);
+    }
+
+    
+    public void construirAuto() {
+   
+    }
+}
